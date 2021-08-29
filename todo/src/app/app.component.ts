@@ -24,6 +24,8 @@ export class AppComponent {
       ]
     });
 
+    this.load();
+
   }
 
   public add() {
@@ -43,18 +45,26 @@ export class AppComponent {
     if (index !== -1) {
       this.todos.splice(index, 1);
     }
+    this.save();
   }
 
   public maskAsDone(todo: Todo) {
     todo.done = true;
+    this.save();
   }
 
   public markAsUndone(todo: Todo) {
     todo.done = false;
+    this.save();
   }
 
   public save() {
     const data = JSON.stringify(this.todos);
     localStorage.setItem('todos', data);
+  }
+
+  public load() {
+    const data = localStorage.getItem('todos');
+    this.todos = !!data ? JSON.parse(data) : [];
   }
 }
