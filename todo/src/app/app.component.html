@@ -2,6 +2,6 @@
 
 <ul>
   <li *ngFor="let todo of todos">
-    {{ todo }}
+    {{ todo.id }} {{ todo.title }} - <button>Concluir</button> | <button>Remover</button>
   </li>
 </ul>
