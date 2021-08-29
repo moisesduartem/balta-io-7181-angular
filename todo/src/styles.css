@@ -12,3 +12,39 @@ body {
     background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
     background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
 }
+
+li {
+    padding: 15px;
+    margin: 10px;
+    font-size: 1em;
+    font-style: italic;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+li>button {
+    border: none;
+    background-color: #fff;
+    font-size: 1em;
+    float: right;
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+li>button:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+}
