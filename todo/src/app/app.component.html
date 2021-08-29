@@ -1,6 +1,8 @@
 <h1>{{ title }}</h1>
 
 <ul>
+  <p *ngIf="todos.length === 0"><small>Não tem nenhuma tarefa hoje!</small></p>
+
   <li *ngFor="let todo of todos">
     {{ todo.id }} {{ todo.title }} -
     <button *ngIf="!todo.done" (click)="maskAsDone(todo)">Concluir</button>
