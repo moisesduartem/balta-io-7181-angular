@@ -13,6 +13,15 @@ body {
     background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
 }
 
+.title {
+    color: #fff;
+    text-shadow: 3px 5px #000;
+}
+
+.text-center {
+    text-align: center;
+}
+
 li {
     padding: 15px;
     margin: 10px;
@@ -47,4 +56,14 @@ ul {
     background: #fff;
     border-radius: 10px;
     box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.39);
+}
+
+.button {
+    background-color: #000;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    color: #fff;
+    font-size: 1em;
+    padding: auto 50px;
 }
